@@ -1,0 +1,54 @@
+[2024-08-23 10:12:22,125] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: dag_test.create_folder scheduled__2024-08-22T00:00:00+00:00 [queued]>
+[2024-08-23 10:12:22,130] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: dag_test.create_folder scheduled__2024-08-22T00:00:00+00:00 [queued]>
+[2024-08-23 10:12:22,130] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2024-08-23 10:12:22,130] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2024-08-23 10:12:22,130] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2024-08-23 10:12:22,138] {taskinstance.py:1377} INFO - Executing <Task(BashOperator): create_folder> on 2024-08-22 00:00:00+00:00
+[2024-08-23 10:12:22,139] {standard_task_runner.py:52} INFO - Started process 26980 to run task
+[2024-08-23 10:12:22,141] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'dag_test', 'create_folder', 'scheduled__2024-08-22T00:00:00+00:00', '--job-id', '4', '--raw', '--subdir', 'DAGS_FOLDER/dag_test.py', '--cfg-path', '/tmp/tmp94v7gnrd', '--error-file', '/tmp/tmpnql1bm_0']
+[2024-08-23 10:12:22,141] {standard_task_runner.py:80} INFO - Job 4: Subtask create_folder
+[2024-08-23 10:12:22,163] {task_command.py:370} INFO - Running <TaskInstance: dag_test.create_folder scheduled__2024-08-22T00:00:00+00:00 [running]> on host DESKTOP-TAQHM1V.
+[2024-08-23 10:12:22,190] {taskinstance.py:1569} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=dag_test
+AIRFLOW_CTX_TASK_ID=create_folder
+AIRFLOW_CTX_EXECUTION_DATE=2024-08-22T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2024-08-22T00:00:00+00:00
+[2024-08-23 10:12:22,191] {subprocess.py:62} INFO - Tmp dir root location: 
+ /tmp
+[2024-08-23 10:12:22,191] {subprocess.py:74} INFO - Running command: ['bash', '-c', 'mkdir -p "/root/Documentos/pipeline-airflow/dags_folders/folder"']
+[2024-08-23 10:12:22,195] {subprocess.py:85} INFO - Output:
+[2024-08-23 10:12:22,197] {subprocess.py:96} INFO - Command exited with return code 0
+[2024-08-23 10:12:22,210] {taskinstance.py:1395} INFO - Marking task as SUCCESS. dag_id=dag_test, task_id=create_folder, execution_date=20240822T000000, start_date=20240823T131222, end_date=20240823T131222
+[2024-08-23 10:12:22,233] {local_task_job.py:156} INFO - Task exited with return code 0
+[2024-08-23 10:12:22,242] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-08-23 10:18:18,938] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: dag_test.create_folder scheduled__2024-08-22T00:00:00+00:00 [queued]>
+[2024-08-23 10:18:18,943] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: dag_test.create_folder scheduled__2024-08-22T00:00:00+00:00 [queued]>
+[2024-08-23 10:18:18,943] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2024-08-23 10:18:18,943] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2024-08-23 10:18:18,943] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2024-08-23 10:18:18,951] {taskinstance.py:1377} INFO - Executing <Task(BashOperator): create_folder> on 2024-08-22 00:00:00+00:00
+[2024-08-23 10:18:18,952] {standard_task_runner.py:52} INFO - Started process 29309 to run task
+[2024-08-23 10:18:18,954] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'dag_test', 'create_folder', 'scheduled__2024-08-22T00:00:00+00:00', '--job-id', '5', '--raw', '--subdir', 'DAGS_FOLDER/dag_test.py', '--cfg-path', '/tmp/tmpnhjuvlbi', '--error-file', '/tmp/tmpz2ysmw97']
+[2024-08-23 10:18:18,955] {standard_task_runner.py:80} INFO - Job 5: Subtask create_folder
+[2024-08-23 10:18:18,977] {task_command.py:370} INFO - Running <TaskInstance: dag_test.create_folder scheduled__2024-08-22T00:00:00+00:00 [running]> on host DESKTOP-TAQHM1V.
+[2024-08-23 10:18:19,007] {taskinstance.py:1569} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=dag_test
+AIRFLOW_CTX_TASK_ID=create_folder
+AIRFLOW_CTX_EXECUTION_DATE=2024-08-22T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2024-08-22T00:00:00+00:00
+[2024-08-23 10:18:19,008] {subprocess.py:62} INFO - Tmp dir root location: 
+ /tmp
+[2024-08-23 10:18:19,008] {subprocess.py:74} INFO - Running command: ['bash', '-c', 'mkdir -p "/root/Documentos/pipeline-airflow/dags_folders/folder=2024-08-23T00:00:00+00:00"']
+[2024-08-23 10:18:19,011] {subprocess.py:85} INFO - Output:
+[2024-08-23 10:18:19,013] {subprocess.py:96} INFO - Command exited with return code 0
+[2024-08-23 10:18:19,027] {taskinstance.py:1395} INFO - Marking task as SUCCESS. dag_id=dag_test, task_id=create_folder, execution_date=20240822T000000, start_date=20240823T131818, end_date=20240823T131819
+[2024-08-23 10:18:19,046] {local_task_job.py:156} INFO - Task exited with return code 0
+[2024-08-23 10:18:19,056] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
